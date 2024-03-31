@@ -7,7 +7,7 @@
 ###
 **模型文件已开源**
 RoadSafety-GPT-6b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSSSSS/RoadSafety-GPT-6b-chat/files)
-RoadSafety-GPT-14b-chat:
+RoadSafety-GPT-14b-chat:- [**ModelSpace**]https://modelscope.cn/models/LSSSSSSSSSS/RoadSafety-GPT-14b-chat/files)
 ###
 **训练集扩充**
 ![image](https://github.com/l-show/RoadSafety_Gpt-14b/blob/main/assets/%E6%95%B0%E6%8D%AE%E6%89%A9%E5%85%85.png)
