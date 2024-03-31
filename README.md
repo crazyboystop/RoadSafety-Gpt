@@ -5,6 +5,9 @@
 ###
 针对上述目标，为实现交通系统安全的智能化，提升系统的智能服务水平，本团队设计并研发了RoadSafety-GPT道路交通安全大模型。该模型以大型预训练语言模型Qwen-14b-chat为基座，采用层叠模型和权重共享技术，通过多任务学习和数据集平衡，实现领域特化的正则化，通过继续预训练、有监督微调、强化学习三个步骤，使得模型在保留通用能力的同时在交通领域展现出强大的专业能力。通过多模态生成、循环迭代机制等技术，模型能够及时适应交通的复杂场景变化，增强其下游任务的解决能力。
 ###
+**训练集扩充**
+![image](https://github.com/l-show/RoadSafety_Gpt-14b/blob/main/assets/%E6%95%B0%E6%8D%AE%E6%89%A9%E5%85%85.png)
+###
 **全训练流程**
 ![image](https://github.com/l-show/RoadSafety_Gpt-14b/blob/main/assets/%E8%AE%AD%E7%BB%83%E6%B5%81%E7%A8%8B.png)
 ###
@@ -12,7 +15,11 @@
 我们在RoadSafety_Gpt-14b-chat的基础上增加了一个基于开源检索框架 Langchain的检索增强模块。
 # 交通领域测试
 使用了小样本分类任务测试方式，RoadSafety-GPT-14b模型的表现使用混淆矩阵记录
+###
 ![image](https://github.com/l-show/RoadSafety_Gpt-14b/blob/main/assets/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5.png)
+###
+模型在测试集上的表现与ChatGLM4.0进行对比
+![image](https://github.com/l-show/RoadSafety_Gpt-14b/blob/main/assets/%E5%AF%B9%E6%AF%94.png)
 ## 致谢
 
 本项目基于如下开源项目展开，在此对相关项目和开发人员表示诚挚的感谢：
