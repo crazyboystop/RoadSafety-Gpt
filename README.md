@@ -26,7 +26,7 @@
 
 - [**Qwen-14B**](https://github.com/QwenLM/Qwen?tab=readme-ov-file)
 - [**LLaMA Factory**](https://github.com/hiyouga/LLaMA-Factory?tab=readme-ov-file)
-- [**ChatGLM3-6B**](https://github.com/THUDM/ChatGLM3/blob/main/README.md)
+- [**ChatGLM3-6B**](https://github.com/THUDM/ChatGLM3)
   
 同样感谢其他未能列举的为本项目提供了重要帮助的工作。
 ## 声明
