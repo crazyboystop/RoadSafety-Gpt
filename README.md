@@ -10,6 +10,9 @@
 ###
 # 检索增强模块
 我们在RoadSafety_Gpt-14b-chat的基础上增加了一个基于开源检索框架 Langchain的检索增强模块。
+# 交通领域测试
+使用了小样本分类任务测试方式，RoadSafety-GPT-14b模型的表现使用混淆矩阵记录
+![image](https://github.com/l-show/RoadSafety_Gpt-14b/blob/main/assets/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5.png)
 ## 致谢
 
 本项目基于如下开源项目展开，在此对相关项目和开发人员表示诚挚的感谢：
