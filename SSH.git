@@ -1,0 +1,30 @@
+#建议socks5 和http 都配置一下
+
+配置socks5
+
+git config --global http.proxy socks5 127.0.0.1:7890
+git config --global https.proxy socks5 127.0.0.1:7890
+
+配置http
+
+git config --global http.proxy 127.0.0.1:7890
+git config --global https.proxy 127.0.0.1:7890
+
+# 主机号 127.0.0.1是使用的 V 的主机号（也就是有 V 的本机）
+# 端口号 7890 指 V 的端口号，软件设置里查看（在你 V 软件里找）
+
+查看设置
+
+git config --global --get http.proxy
+git config --global --get https.proxy
+
+取消方法
+
+git config --global --unset socks5.proxy
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+HF
+git remote set-url origin https://<leesws>:<>@huggingface.co/<leesws/RoadSafety-GPT-pre001>
+git pull origin
+$: git remote set-url origin git@hf.co:<leesws/RoadSafety-GPT-pre001>
