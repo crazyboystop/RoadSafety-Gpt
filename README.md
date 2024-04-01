@@ -8,7 +8,7 @@
 - [模型](#模型)
 - [训练方法](#训练方法)
 - [数据集](#数据集)
-- [软硬件依赖](#软硬件依赖)
+- [设备要求](#设备要求)
 - [如何使用](#如何使用)
 - [交通领域测试](#交通领域测试)
 - [免责声明](#免责声明)
@@ -36,6 +36,15 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
 **全训练流程**
 ![image](https://github.com/l-show/RoadSafety_Gpt-14b/blob/main/assets/%E8%AE%AD%E7%BB%83%E6%B5%81%E7%A8%8B.png)
 ###
+## 数据集
+###
+## 设备要求
+**RoadSafety-GPT-6B-Chat**
+**RoadSafety-GPT-14B-Chat**
+###
+## 如何使用
+
+###
 ## 交通领域测试
 使用了小样本分类任务测试方式，RoadSafety-GPT-14b模型的表现使用混淆矩阵记录
 ###
@@ -52,6 +61,12 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
 - [**ChatGLM3-6B**](https://github.com/THUDM/ChatGLM3)
 
 ```
+@article{qwen,
+  title={Qwen Technical Report},
+  author={Jinze Bai and Shuai Bai and Yunfei Chu and Zeyu Cui and Kai Dang and Xiaodong Deng and Yang Fan and Wenbin Ge and Yu Han and Fei Huang and Binyuan Hui and Luo Ji and Mei Li and Junyang Lin and Runji Lin and Dayiheng Liu and Gao Liu and Chengqiang Lu and Keming Lu and Jianxin Ma and Rui Men and Xingzhang Ren and Xuancheng Ren and Chuanqi Tan and Sinan Tan and Jianhong Tu and Peng Wang and Shijie Wang and Wei Wang and Shengguang Wu and Benfeng Xu and Jin Xu and An Yang and Hao Yang and Jian Yang and Shusheng Yang and Yang Yao and Bowen Yu and Hongyi Yuan and Zheng Yuan and Jianwei Zhang and Xingxuan Zhang and Yichang Zhang and Zhenru Zhang and Chang Zhou and Jingren Zhou and Xiaohuan Zhou and Tianhang Zhu},
+  journal={arXiv preprint arXiv:2309.16609},
+  year={2023}
+}
 @Misc{llama-factory,
   title = {LLaMA Factory},
   author = {hiyouga},
@@ -72,4 +87,6 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
 ## 协议
 RoadSafety_Gpt-14b-chat 可在 Apache 许可证下使用。请查看 LICENSE 文件获取更多信息。
 ## 引用
+## Star History
+![Star History Chart](https://api.star-history.com/svg?repos=hiyouga/LLaMA-Factory&type=Date)
 
