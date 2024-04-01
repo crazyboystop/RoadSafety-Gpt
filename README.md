@@ -88,5 +88,5 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
 RoadSafety_Gpt-14b-chat 可在 Apache 许可证下使用。请查看 LICENSE 文件获取更多信息。
 ## 引用
 ## Star History
-![Star History Chart](https://api.star-history.com/svg?repos=hiyouga/LLaMA-Factory&type=Date)
+![Star History Chart](https://api.star-history.com/svg?repos=l-show/RoadSafety-GPT&type=Date)
 
