@@ -39,11 +39,18 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
 ## 数据集
 ###
 ## 设备要求
-**RoadSafety-GPT-6B-Chat**
-**RoadSafety-GPT-14B-Chat**
+| 模型名                                   | 模型大小     | 模型推理       | Template  | 推理显卡建议   |  微调显卡建议 |
+| ---------------------------------------- | ------------ | --------------- | --------- |----------------|---------------|
+| **RoadSafety-GPT-6B-Chat**               | 6B           |显存>16GB        | chatglm   |    RTX 3090    | V100-32GB     |
+| **RoadSafety-GPT-14B-Chat**              | 14B          | 显存>24GB       | qwen      |    V100-32GB   | 2*V100-32GB   |
+
 ###
 ## 如何使用
+1.如果您下载的是经**Lora**训练后发布的**权重模型**，请您将其作为adapter与原模型进行权重合并，或在推理时直接加载adapter权重
 
+2.如果您下载的是**完整模型**，请您参考**chatglm**与**qwen**的**template**进行模型部署
+
+3.我们推荐使用**LLaMA-Factory**开源项目使用web.ui进行模型推理或训练
 ###
 ## 交通领域测试
 使用了小样本分类任务测试方式，RoadSafety-GPT-14b模型的表现使用混淆矩阵记录
@@ -59,7 +66,7 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
 - [**Qwen-14B**](https://github.com/QwenLM/Qwen?tab=readme-ov-file)
 - [**LLaMA Factory**](https://github.com/hiyouga/LLaMA-Factory?tab=readme-ov-file)
 - [**ChatGLM3-6B**](https://github.com/THUDM/ChatGLM3)
-
+###
 ```
 @article{qwen,
   title={Qwen Technical Report},
@@ -74,7 +81,7 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
   year = {2023}
 }
 ```
-  
+###
 同样感谢其他未能列举的为本项目提供了重要帮助的工作。
 ## 免责声明
 
@@ -85,8 +92,9 @@ RoadSafety-GPT-14b-chat:- [**ModelSpace**](https://modelscope.cn/models/LSSSSSSS
 3. 使用**RoadSafety-GPT**即表示您同意这些条款和条件, 并承认您了解其使用可能带来的潜在风险. 
 
 ## 协议
-RoadSafety_Gpt-14b-chat 可在 Apache 许可证下使用。请查看 LICENSE 文件获取更多信息。
+**RoadSafety-Gpt** 可在 **Apache** 许可证下使用。请查看 **LICENSE** 文件获取更多信息。
 ## 引用
+本项目由中南大学<智慧交通湖南省重点实验室>发起。
 ## Star History
 ![Star History Chart](https://api.star-history.com/svg?repos=l-show/RoadSafety-GPT&type=Date)
 
