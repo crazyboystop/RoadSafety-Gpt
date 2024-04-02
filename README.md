@@ -183,6 +183,13 @@ nvidia-smi #查看显存占用
   howpublished = {\url{https://github.com/hiyouga/LLaMA-Factory}},
   year = {2023}
 }
+@inproceedings{du2022glm,
+  title={GLM: General Language Model Pretraining with Autoregressive Blank Infilling},
+  author={Du, Zhengxiao and Qian, Yujie and Liu, Xiao and Ding, Ming and Qiu, Jiezhong and Yang, Zhilin and Tang, Jie},
+  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={320--335},
+  year={2022}
+}
 ```
 ###
 同样感谢其他未能列举的为本项目提供了重要帮助的工作。
