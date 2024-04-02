@@ -55,7 +55,38 @@ RoadSafety-Diffusion:- [**ModelSpace**](https://www.modelscope.cn/models/LSSSSSS
 
 2.如果您下载的是**完整模型**，请您参考**chatglm**与**qwen**的**template**进行模型部署
 
-3.我们推荐使用**LLaMA-Factory**开源项目使用web.ui进行模型推理或训练
+3.我们推荐使用[**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory)开源项目使用web-ui进行模型推理或训练
+###
+1-服务器选择
+在[**AutoDL**](https://www.autodl.com/)上，使用RTX-3090显卡，通过LLaMA-Factory部署RoadSafety-GPT-6B-Chat服务，完成微调并测试推理成功！
+| 框架名称                                  | 框架版本     |  Python版本            | Cuda版本   | 推理显卡建议   |  微调显卡建议   |  储存空间建议  |
+| ---------------------------------------- | ------------ | ---------------------- | --------- |----------------|---------------|----------------|
+| **PyTorch**                              | >**2.0.0**   |3.8(ubuntu20.04)        |     11.8  |    RTX 3090    | V100-32GB     |    100GB       |
+2-项目下载
+```bash
+apt update && apt install git-lfs -y
+cd **下载目录**
+git clone https://github.com/hiyouga/LLaMA-Factory.git
+git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b.git
+git clone https://www.modelscope.cn/LSSSSSSSSSS/RoadSafety-GPT-6b-chat.git
+du -sh **文件夹名称** #查看文件大小
+cd ./LLaMA-Factory
+pip install -r requirements
+```
+3-通过LLaMA-Factory启动（推荐）
+```
+cd ./LLaMA-Factory/src
+ls #查看文件列表
+vim train_web.py
+#添加：server_port=6006
+python3 train_web.py
+```
+4-使用SSH访问Local Host
+5-通过LLaMA-Factory启动
+加载模型
+```
+nvidia-smi #查看显存占用
+```
 ###
 ## 交通领域测试
 使用了小样本分类任务测试方式，RoadSafety-GPT模型的表现使用混淆矩阵记录
@@ -91,7 +122,7 @@ RoadSafety-Diffusion:- [**ModelSpace**](https://www.modelscope.cn/models/LSSSSSS
 
 1. **RoadSafety-GPT**有着目前大语言模型尚无法克服的问题和缺陷,尽管它能够在许多交通事故分析和隐患排查方面提供可供参考的建议, 但模型仅供用户参考使用，仍然可能产生错误的、有害的、冒犯性的或其他不良的输出;我们不对因使用 **RoadSafety-GPT** 所引发的任何问题、风险或不良后果承担责任,用户在关键或高风险场景中应谨慎行事, 不要使用这些模型作为最终决策参考, 以免导致人身伤害、财产损失或重大损失.
 
-2. **RoadSafety-GPT**由**ChatGLM3-6B**模型、**Qwen-14B**领域调优而得, 按"原样"提供, 在任何情况下, 作者、贡献者或版权所有者均不对因模型使用或其他因模型产生的交易而产生的任何索赔、损害赔偿或其他责任(无论是合同、侵权还是其他原因)承担责任.
+2. **RoadSafety-GPT**由**ChatGLM3-6B**模型、**Qwen-14B**交通领域调优而得, 按"**原样**"提供, 在任何情况下, 作者、贡献者或版权所有者均不对因模型使用或其他因模型产生的交易而产生的任何索赔、损害赔偿或其他责任(无论是合同、侵权还是其他原因)承担责任.
 
 3. 使用**RoadSafety-GPT**即表示您同意这些条款和条件, 并承认您了解其使用可能带来的潜在风险. 
 
@@ -101,4 +132,3 @@ RoadSafety-Diffusion:- [**ModelSpace**](https://www.modelscope.cn/models/LSSSSSS
 本项目由中南大学<智慧交通湖南省重点实验室>发起。
 ## Star History
 ![Star History Chart](https://api.star-history.com/svg?repos=l-show/RoadSafety-GPT&type=Date)
-
